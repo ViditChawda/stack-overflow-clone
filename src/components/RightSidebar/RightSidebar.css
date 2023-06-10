@@ -28,6 +28,7 @@
     display: flex;
     align-items: flex-start;
     justify-content: space-evenly;
+    font-size: 14px;
 }
 
 .right-sidebar-div-1 .right-sidebar-div-2 p{
@@ -38,4 +39,33 @@
 .side-nav-icon{
     width: 10px;
     height: 10px;
+}
+
+.widget-tags{
+    margin-top : 40px;
+    box-shadow : 3px 3px 10px rgb(0 0 0 /5%),
+    -3px -3px 10px rgb(0 0 0 / 5%)
+}
+
+.widget-tags h3{
+    margin : 0%;
+    padding: 15px;
+    background-color: #f8f9f9;
+    border: solid 1px #e3e6e8;
+}
+
+.widget-tags-div{
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: space-evenly;
+        border: solid 1px #e3e6e8;
+        padding: 10px;
+}
+
+.widget-tags-div p {
+    padding: 5px;
+    background-color: #e1ecf4;
+    color: #39739d;
+    border-radius: 2px;
 }

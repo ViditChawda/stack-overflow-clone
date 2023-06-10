@@ -13,6 +13,7 @@ const Widget = () => {
                     <div>
                         <FaPen className='side-nav-icon' />
                     </div>
+
                     <p>Observability is key to future of software (and your DevOps career)</p>
                 </div>
                 <div className='right-sidebar-div-2'>
@@ -47,7 +48,8 @@ const Widget = () => {
             <div className='right-sidebar-div-1'>
                 <div className='right-sidebar-div-2'>
                     {/* <FaCommentAlt width='18' /> */}
-                    <p>38  Why was this spam flag declined, yet the question marked as spam?</p>
+                    <p>38</p> 
+                    <p>   Why was this spam flag declined, yet the question marked as spam?</p>
                 </div>
                 <div className='right-sidebar-div-2'>
                     {/* <FaCommentAlt width='18' /> */}
