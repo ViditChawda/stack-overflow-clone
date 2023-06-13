@@ -49,15 +49,17 @@ const Widget = () => {
                 <div className='right-sidebar-div-2'>
                     {/* <FaCommentAlt width='18' /> */}
                     <p>38</p> 
-                    <p>   Why was this spam flag declined, yet the question marked as spam?</p>
+                    <p>Why was this spam flag declined, yet the question marked as spam?</p>
                 </div>
                 <div className='right-sidebar-div-2'>
                     {/* <FaCommentAlt width='18' /> */}
-                    <p>20  What is the best course of action when a user has  high enough rep to...</p>
+                    <p>20</p>
+                    <p>What is the best course of action when a user has  high enough rep to...</p>
                 </div>
                 <div className='right-sidebar-div-2'>
                     {/* <BsStackOverflow width={18}/> */}
-                    <p> 14 is a link to the "How to ask"  help page a useful comment? </p>
+                    <p>14</p>
+                    <p>is a link to the "How to ask"  help page a useful comment? </p>
                 </div>
             </div>
 

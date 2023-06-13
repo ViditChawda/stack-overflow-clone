@@ -37,8 +37,9 @@
 }
 
 .side-nav-icon{
-    width: 10px;
-    height: 10px;
+    margin-top : 4px;
+    width: 15px;
+    height: 15px;
 }
 
 .widget-tags{
