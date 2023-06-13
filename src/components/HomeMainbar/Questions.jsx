@@ -5,7 +5,7 @@ const Questions = ({ question }) => {
 
     const Tags = question.questionTags
     return (
-        <div className='display-ans-container'>
+        <div className='display-question-container'>
             <div className='display-votes-ans'>
                 <p>{question.votes}</p>
                 <p>Votes</p>
@@ -15,7 +15,7 @@ const Questions = ({ question }) => {
                 <p>answers</p>
             </div>
             <div className='display-question-details'>
-                <Link to={`/Question/${question.id}`}>{question.questionTitle}</Link>
+                <Link to={`/Question/${question.id}`} className='question-title-link'>{question.questionTitle}</Link>
                 <div className='display-tags-time'>
                     <div className='display-tags'>
                         {/* {

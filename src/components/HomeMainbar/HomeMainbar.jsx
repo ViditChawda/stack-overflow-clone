@@ -45,7 +45,7 @@ const HomeMainbar = () => {
     <div className='main-bar'>
       <div className='main-bar-header'>
         {
-          loaction.pathname === '/' ? <h1>Top Questions</h1> : <h1>All Questions</h1>
+          loaction.pathname === '/Home' ? <h1>Top Questions</h1> : <h1>All Questions</h1>
         }
         <Link to="/AskQuestion" className='ask-btn'>Ask Question</Link>
       </div>
