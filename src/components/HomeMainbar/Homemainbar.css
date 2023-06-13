@@ -2,4 +2,34 @@
     width: calc(100% - 300px - 24px);
     float: left;
     /* border: 1px solid red; */
+    margin: 25px 0px;
+    padding: 0;
+}
+
+.main-bar-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-bar-header h1{
+    font-weight: 400;
+}
+
+.main-bar-header .ask-btn{
+    padding: 10px 15px;
+    border-radius: 4px;
+    background-color: #009dff;
+    color: white;
+    border: none;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.main-bar-header .ask-btn:hover{
+    background-color: #0086d8;
+}
+
+.display-question-container{
+     
 }
