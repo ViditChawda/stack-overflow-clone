@@ -14,7 +14,7 @@ const Navbar = () => {
     <nav className='main-nav'>
       <div className='navbar'>
 
-        <Link to='/Home' className='nav-item logo'>
+        <Link to='/' className='nav-item logo'>
           <img src={logo} alt="logo" className='logo' />
         </Link>
         <Link to='/' className='nav-item nav-btn'>About</Link>

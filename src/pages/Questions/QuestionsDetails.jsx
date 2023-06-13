@@ -83,36 +83,38 @@ const QuestionsDetails = () => {
                     </h1>
                     <div className='question-details-container-2'>
                       <div className="question-votes">
-                        {/* <BiSolidUpArrow/> */}
-                        <BiUpArrow />
+                        <BiUpArrow className='votes-icon' />
                         <p>{question.upVotes - question.downVotes}</p>
-                        {/* <BiSolidDownArrow/> */}
-                        <BiDownArrow />
+                        <BiDownArrow className='votes-icon' />
                       </div>
-                      <div style={{ width: "100%" }}>
-                        <p className='question-body'>{question.questionBody}</p>
-                        <div className='question-details-tags'></div>
-                        {
-                          question.questionTags.map((tag) => (
-                            <p key={tag}>{tag} </p>
-                          ))
-                        }
-                      </div>
-                      <div className='question-action-user'>
-                        <div>
-                          <button type='button'>Share</button>
-                          <button type='button'>Delete</button>
+                      <div className='new'>
+                        <div style={{ width: "100%" }} >
+                          <p className='question-body'>{question.questionBody}</p>
+                          <div className='question-details-tags'>
+                            {
+                              question.questionTags.map((tag) => (
+                                <p key={tag}>{tag} </p>
+                              ))
+                            }
+                          </div>
                         </div>
-                        <div>
-                          <p>asked {question.askedOn}</p>
-                          <Link to={`/User/${question._id}`} className='user-link' style={{ color: "#0086d8" }}>
-                            <Avatar backgroundColor="orange" px="8px" py="5px">{question.userPosted.charAt(0).toUpperCase()}</Avatar>
-                            <div>
-                              {
-                                question.userPosted
-                              }
-                            </div>
-                          </Link>
+                        <div className='question-action-user'>
+                          <div>
+                            <button type='button'>Share</button>
+                            <button type='button'>Delete</button>
+                          </div>
+                          <div>
+                            <p>asked {question.askedOn}</p>
+                            <Link to={`/User/${question.userId}`} className='user-link' style={{ color: "#0086d8" }}>
+                              <Avatar backgroundColor="orange" px="8px" py="5px" >{question.userPosted.charAt(0).toUpperCase()}</Avatar>
+                              <div>
+                                {
+                                  question.userPosted
+                                }
+                              </div>
+                            </Link>
+                          </div>
+
 
 
                         </div>
@@ -131,7 +133,7 @@ const QuestionsDetails = () => {
                     <h3>Your  Answer</h3>
                     <form>
                       <textarea name="" id="" cols="30" rows="10"></textarea> <br />
-                      <input type="Submit" className='post-ans-btn' value='post Your Answer' />
+                      <input type="Submit" className='post-ans-btn' value='Post Your Answer' />
                     </form>
                     <p>
                       Browse other Question tagged
